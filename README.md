@@ -1,2 +1,2 @@
 # bible-notes
-Note taking web app on passages from the KJV Bible.
+Note taking web app for passages from the KJV Bible.
