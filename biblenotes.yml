@@ -1,0 +1,170 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: Bible Notes API
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /notes/{noteId}:
+    get:
+      summary: 'Sample endpoint: Returns details of a particular note'
+      operationId: listNote
+      tags:
+        - note
+      parameters:
+        - name: noteId
+          in: path
+          description: ID of the note
+          required: true
+          schema:
+            type: integer
+            format: int32
+            example: '1001'
+      responses:
+        '200':
+          description: 'Sample response: Details about a note by ID'
+          headers:
+            x-next:
+              description: A link to the next page of responses
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Note'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+        '400':
+          description: Bad Request - Invalid not ID supplied
+          content:
+              application/json:
+                  schema:
+                      $ref: '#/components/schemas/BadRequest'
+                  examples:
+                      example-1:
+                          value:
+                              error:
+                                  message: 'Provided Id is invalid'
+        '401':
+          description: Not Found - Item not Found
+          content:
+              application/json:
+                  schema:
+                      $ref: '#/components/schemas/NotFound'  
+                  examples:
+                      example-1:
+                          value:
+                              error:
+                                  message: 'Id not found'
+ /notes:
+    get:
+      summary: 'Sample Endpont: Returns list of all notes' 
+      tags: []
+      responses:
+        200':
+         description: OK - Successful pull of notes
+         content:
+           application/json:
+             schema:
+               type: array
+               uniqueItems: false
+               maximum: 10
+               minimum: 4
+               notes:
+                 $ref: '#/components/schemas/notes' 
+            examples:
+              example-1:
+                value:
+                  - noteId: 1001
+                    title: Bible Verses about Salvation
+                    description: These verses are about salvation: Psalm 103:1, Psalm 24:5, John 3:16, Rev 3:7
+                  - noteId: 1002
+                    title: Bible Verses about Redemption
+                    description: These verses are about salvation: Job 3:10, Lev 25:51, Num 3:49, Psalm 48:8
+                  - noteId: 1003
+                    title: Bible Study for 12/16
+                    description: John 10:10, 1 Samuel 17:39, 1 Kings 1:1-16, Ruth 4:17, Ezek 10:1-10
+                  - noteId: 1004
+                    title: Bible Study for 12/17
+                    description: 2 Kings 9:28, 2 Kings 12:21
+                  - noteId: 1005
+                    title: Bible Study for 12/18
+                    description: Nehemiah 12:36, Hosea 3:5
+                  - noteId: 1006
+                    title: Bible Verses about Faith
+                    description: These verses are about faith: Deut 7:9, 1 Samuel 2:35, 2 Chron 19:9
+                  - noteId: 1007
+                    title: Bible Verses about Forgiveness
+                    description: These verses are about forgivness: Psalm 130:4, Daniel 9:9
+                  - noteId: 1008
+                    title: Bible Verses about Repentence
+                    description: These verses are about repentence: Gen 6:6-7, Ex 32:14, Judges 2:18
+                  - noteId: 1009
+                    title: Notes for Church Meeting 12/20
+                    description: Review Pslam 119, Isaiah 54:17, Zech 12:8 
+                  - noteId: 1010
+                    title: Notes for Church Meeting 2/10
+                    description: Review Jerimiah 21:12, Jerimiah 22:2 and Proverbs 1:1
+
+                        
+components:
+  schemas:
+    Note:
+        title: note
+        type: object
+        required:
+            - noteId
+            - title
+        description: Model containing notes information
+        properties:
+            noteId:
+                type: integer
+                format: int32
+                example: '1001'
+            title:
+                type: string
+                example: 'Notes about Christ'
+            description:
+                type: string
+                example: 'Refer to John 14:25, 2 Chron 16:20, Psalm 34'
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+    BadRequest:
+        title: Bad Request
+        type: object
+        properties:
+            error:
+                type: object
+                properties:
+                    message:
+                        type: string
+    NotFound:
+        title: Not Found
+        type: object
+        properties:
+            error:
+                type: object
+                properties:
+                    message:
+                        type: string
+    Notes:
+        type: array
+        title: notes
+        example: '10'
+        maximum: 10
+        minimum: 4
+        items:
+            $ref: '#/components/schemas/note'
