@@ -108,9 +108,7 @@ paths:
                     description: Review Pslam 119, Isaiah 54:17, Zech 12:8 
                   - noteId: 1010
                     title: Notes for Church Meeting 2/10
-                    description: Review Jerimiah 21:12, Jerimiah 22:2 and Proverbs 1:1
-
-                        
+                    description: Review Jerimiah 21:12, Jerimiah 22:2 and Proverbs 1:1               
 components:
   schemas:
     Note:
