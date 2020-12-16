@@ -60,7 +60,7 @@ paths:
                           value:
                               error:
                                   message: 'Id not found'
- /notes:
+  /notes:
     get:
       summary: 'Sample Endpont: Returns list of all notes' 
       tags: []
@@ -76,7 +76,7 @@ paths:
                minimum: 4
                notes:
                  $ref: '#/components/schemas/notes' 
-            examples:
+             examples:
               example-1:
                 value:
                   - noteId: 1001
