@@ -85,30 +85,30 @@ paths:
                    - noteId: 1002
                      title: Bible Verses about Redemption
                      description: These verses are about salvation: Job 3:10, Lev 25:51, Num 3:49, Psalm 48:8
-                    - noteId: 1003
-                      title: Bible Study for 12/16
-                      description: John 10:10, 1 Samuel 17:39, 1 Kings 1:1-16, Ruth 4:17, Ezek 10:1-10
-                    - noteId: 1004
-                      title: Bible Study for 12/17
-                      description: 2 Kings 9:28, 2 Kings 12:21
-                    - noteId: 1005
-                      title: Bible Study for 12/18
-                      description: Nehemiah 12:36, Hosea 3:5
-                    - noteId: 1006
-                      title: Bible Verses about Faith
-                      description: These verses are about faith: Deut 7:9, 1 Samuel 2:35, 2 Chron 19:9
-                    - noteId: 1007
-                      title: Bible Verses about Forgiveness
-                      description: These verses are about forgivness: Psalm 130:4, Daniel 9:9
-                    - noteId: 1008
-                      title: Bible Verses about Repentence
-                      description: These verses are about repentence: Gen 6:6-7, Ex 32:14, Judges 2:18
-                    - noteId: 1009
-                      title: Notes for Church Meeting 12/20
-                      description: Review Pslam 119, Isaiah 54:17, Zech 12:8 
-                    - noteId: 1010
-                      title: Notes for Church Meeting 2/10
-                      description: Review Jerimiah 21:12, Jerimiah 22:2 and Proverbs 1:1               
+                   - noteId: 1003
+                     title: Bible Study for 12/16
+                     description: John 10:10, 1 Samuel 17:39, 1 Kings 1:1-16, Ruth 4:17, Ezek 10:1-10
+                   - noteId: 1004
+                     title: Bible Study for 12/17
+                     description: 2 Kings 9:28, 2 Kings 12:21
+                   - noteId: 1005
+                     title: Bible Study for 12/18
+                     description: Nehemiah 12:36, Hosea 3:5
+                   - noteId: 1006
+                     title: Bible Verses about Faith
+                     description: These verses are about faith: Deut 7:9, 1 Samuel 2:35, 2 Chron 19:9
+                   - noteId: 1007
+                     title: Bible Verses about Forgiveness
+                     description: These verses are about forgivness: Psalm 130:4, Daniel 9:9
+                   - noteId: 1008
+                     title: Bible Verses about Repentence
+                     description: These verses are about repentence: Gen 6:6-7, Ex 32:14, Judges 2:18
+                   - noteId: 1009
+                     title: Notes for Church Meeting 12/20
+                     description: Review Pslam 119, Isaiah 54:17, Zech 12:8 
+                   - noteId: 1010
+                     title: Notes for Church Meeting 2/10
+                     description: Review Jerimiah 21:12, Jerimiah 22:2 and Proverbs 1:1               
 components:
   schemas:
     Note:
