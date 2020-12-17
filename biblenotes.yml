@@ -30,25 +30,15 @@ paths:
         '400':
           description: Bad Request - Invalid ID supplied
           content:
-              application/json:
-                  schema:
-                      $ref: '#/components/schemas/BadRequest'
-                  examples:
-                      example-1:
-                          value:
-                              error:
-                                  message: 'Provided Id is invalid'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
         '401':
           description: Not Found - Item not Found
           content:
-              application/json:
-                  schema:
-                      $ref: '#/components/schemas/NotFound'  
-                  examples:
-                      example-1:
-                          value:
-                              error:
-                                  message: 'Id not found'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NotFound'  
   /notes:
     get:
       summary: 'Sample Endpont: Returns list of all notes' 
