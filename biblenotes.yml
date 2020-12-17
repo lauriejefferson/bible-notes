@@ -80,10 +80,10 @@ paths:
                example-1:
                  value:
                    - noteId: 1001
-                     title: Bible Verses about Salvation
+                     title: Bible Verses about salvation
                      description: These verses are about salvation: Psalm 103:1, Psalm 24:5, John 3:16, Rev 3:7
                    - noteId: 1002
-                     title: Bible Verses about Redemption
+                     title: Bible Verses about redemption
                      description: These verses are about salvation: Job 3:10, Lev 25:51, Num 3:49, Psalm 48:8
                    - noteId: 1003
                      title: Bible Study for 12/16
@@ -95,16 +95,16 @@ paths:
                      title: Bible Study for 12/18
                      description: Nehemiah 12:36, Hosea 3:5
                    - noteId: 1006
-                     title: Bible Verses about Faith
+                     title: Bible Notes for the week of 12/25
                      description: These verses are about faith: Deut 7:9, 1 Samuel 2:35, 2 Chron 19:9
                    - noteId: 1007
-                     title: Bible Verses about Forgiveness
+                     title: Bible Notes for the week of 1/5
                      description: These verses are about forgivness: Psalm 130:4, Daniel 9:9
                    - noteId: 1008
-                     title: Bible Verses about repentance
+                     title: Bible Notes for the week of 1/20
                      description: These verses are about repentence: Gen 6:6-7, Ex 32:14, Judges 2:18
                    - noteId: 1009
-                     title: Notes for Church Meeting 12/20
+                     title: Notes for Church Meeting 2/7
                      description: Review Pslam 119, Isaiah 54:17, Zech 12:8 
                    - noteId: 1010
                      title: Notes for Church Meeting 2/10
