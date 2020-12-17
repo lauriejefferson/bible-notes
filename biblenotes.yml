@@ -105,7 +105,6 @@ components:
         type: object
         required:
             - noteId
-            - title
         description: Model containing notes information
         properties:
             noteId:
