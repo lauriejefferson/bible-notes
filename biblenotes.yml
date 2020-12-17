@@ -56,7 +56,7 @@ paths:
                notes:
                  $ref: '#/components/schemas/notes' 
              examples:
-               example-1:
+               example-1:  
                  value:
                    - noteId: 1001
                      title: Bible Verses about salvation
