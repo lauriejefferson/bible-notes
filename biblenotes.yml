@@ -23,11 +23,6 @@ paths:
       responses:
         '200':
           description: OK - Details about a note by ID
-          headers:
-            x-next:
-              description: A link to the next page of responses
-              schema:
-                type: string
           content:
             application/json:
               schema:
