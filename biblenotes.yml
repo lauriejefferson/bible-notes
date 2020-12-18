@@ -42,7 +42,7 @@ paths:
                 $ref: '#/components/schemas/NotFound'  
   /notes:
     get:
-      summary: 'Sample Endpont: Returns list of all notes' 
+      summary: 'Get a list of notes from the database' 
       tags: []
       responses:
         '200':
