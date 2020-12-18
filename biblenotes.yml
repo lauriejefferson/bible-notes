@@ -2,6 +2,7 @@ openapi: 3.0.0
 info:
   version: 1.0.0
   title: Bible Notes API
+  description: An API to illustrate a note taking app for bible study
 servers:
   - url: 'http://localhost:3000'
 paths:
@@ -49,21 +50,20 @@ paths:
          content:
            application/json:
              schema:
-               type: array
-               uniqueItems: false
-               maximum: 10
-               minimum: 4
-               notes:
-                 $ref: '#/components/schemas/Notes' 
+               $ref: '#/components/schemas/Notes' 
              examples:
                example-1:  
                  value:
                    - noteId: 1001
                      title: Bible Verses about salvation
                      description: These verses are about salvation: Psalm 103:1, Psalm 24:5, John 3:16, Rev 3:7
+                     createdAt: 2020-01-01T1
+                     updatedAt: 
                    - noteId: 1002
                      title: Bible Verses about redemption
                      description: These verses are about salvation: Job 3:10, Lev 25:51, Num 3:49, Psalm 48:8
+                     createdAt: 2020-02-15
+                     updatedAt: 
                    - noteId: 1003
                      title: Bible Study for 12/16
                      description: John 10:10, 1 Samuel 17:39, 1 Kings 1:1-16, Ruth 4:17, Ezek 10:1-10
@@ -107,6 +107,12 @@ components:
             description:
                 type: string
                 example: 'Refer to John 14:25, 2 Chron 16:20, Psalm 34'
+            createdAt:
+                type: string
+                format: date-time
+            updatedAt: 
+                type: string
+                format: date-time
     Error:
       type: object
       required:
