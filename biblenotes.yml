@@ -54,7 +54,7 @@ paths:
                maximum: 10
                minimum: 4
                notes:
-                 $ref: '#/components/schemas/notes' 
+                 $ref: '#/components/schemas/Notes' 
              examples:
                example-1:  
                  value:
@@ -143,4 +143,4 @@ components:
         maximum: 10
         minimum: 4
         notes:
-            $ref: '#/components/schemas/note'
+            $ref: '#/components/schemas/Note'
