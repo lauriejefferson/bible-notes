@@ -150,19 +150,19 @@ components:
             message:
               type: string
     NotFound:
-        title: Not Found
-        type: object
-        properties:
-            error:
-                type: object
-                properties:
-                    message:
-                        type: string
+      title: Not Found
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            message:
+              type: string
     Notes:
-        type: array
-        title: notes
-        example: '10'
-        maximum: 10
-        minimum: 4
-        items:
-            $ref: '#/components/schemas/Note'
+      type: array
+      title: notes
+      example: '10'
+      maximum: 10
+      minimum: 4
+      items:
+        $ref: '#/components/schemas/Note'
