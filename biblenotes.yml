@@ -107,28 +107,28 @@ paths:
 components:
   schemas:
     Note:
-        title: note
-        type: object
-        required:
-            - noteId
-        description: Model containing notes information
-        properties:
-            noteId:
-                type: integer
-                format: int32
-                example: '1001'
-            title:
-                type: string
-                example: 'Notes about Christ'
-            description:
-                type: string
-                example: 'Refer to John 14:25, 2 Chron 16:20, Psalm 34'
-            createdAt:
-                type: string
-                format: date-time
-            updatedAt: 
-                type: string
-                format: date-time
+      title: note
+      type: object
+      required:
+        - noteId
+      description: Model containing notes information
+      properties:
+        noteId:
+          type: integer
+          format: int32
+          example: '1001'
+        title:
+          type: string
+          example: 'Notes about Christ'
+        description:
+          type: string
+          example: 'Refer to John 14:25, 2 Chron 16:20, Psalm 34'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt: 
+          type: string
+          format: date-time
     Error:
       type: object
       required:
