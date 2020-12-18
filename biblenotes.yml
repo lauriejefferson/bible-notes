@@ -141,14 +141,14 @@ components:
         message:
           type: string
     BadRequest:
-        title: Bad Request
-        type: object
-        properties:
-            error:
-                type: object
-                properties:
-                    message:
-                        type: string
+      title: Bad Request
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            message:
+              type: string
     NotFound:
         title: Not Found
         type: object
