@@ -8,7 +8,7 @@ servers:
 paths:
   /notes/{noteId}:
     get:
-      summary: 'Sample endpoint: Returns details of a particular note'
+      summary: 'Returns details of a particular note'
       operationId: listNote
       tags:
         - note
