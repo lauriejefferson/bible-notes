@@ -39,7 +39,18 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/NotFound'  
+                $ref: '#/components/schemas/NotFound'
+    post: 
+      summary: 'Post a new note to the database'  
+      tags:
+        - notes  
+      responses:
+        '201':
+          description: 'OK - note created'   
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Note'                    
   /notes:
     get:
       summary: 'Get a list of notes from the database' 
