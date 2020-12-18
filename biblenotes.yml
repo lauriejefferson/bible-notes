@@ -97,11 +97,11 @@ paths:
                    - noteId: 1009
                      title: Bible Study Notes
                      description: Read Isaiah 54 before women's group meeting
-                     createdAt: '2020-03-05T14:07:01.688Z'
+                     createdAt: '2020-12-18T17:30:01.000Z'
                      updatedAt: ''
                    - noteId: 1010
                      title: Bible Study Notes
-                     description: Read Psalm 34,35,36 Prov 3-7
+                     description: End of year bible study - Psalm 95:1, John 1:1-5
                      createdAt: '2020-03-05T14:07:01.688Z'
                      updatedAt: ''
 components:
