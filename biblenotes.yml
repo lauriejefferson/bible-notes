@@ -104,7 +104,11 @@ paths:
           content:       
             application/json:
               schema:   
-                $ref: '#/components/schemas/note'
+                type: object
+                properties:
+                  id:
+                    type: string
+                    example: 1025    
   /notes:
     get:
       summary: 'Get a list of notes from the database' 
