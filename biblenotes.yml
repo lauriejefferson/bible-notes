@@ -53,8 +53,6 @@ paths:
               properties:
                 note:
                   $ref: '#/components/schemas/note'
-              required:
-                - note
             examples:
               example-1:   
                 value:
@@ -65,7 +63,27 @@ paths:
                     updatedAt: '' 
       responses:
         '201':
-          description: 'OK - note created'                   
+          description: 'OK - note created' 
+    put:
+      summary: 'Update a note on the database'  
+      tags:
+        - notes
+      operationId: updateNote
+      requestBody:
+        content:
+          appliction/json:
+            schema:
+              type: object
+              properties:
+                note:
+                  $ref: '#/components/schemas/note'
+            example:
+              value:
+                 - noteId: 1115
+                    title: 'King James Bible Study Session'
+                    description: 'Review of 1 Chronicles 7 - 8 and 1 Kings 10 - 11' 
+                    createdAt: '2020-09-16T14:00:00.000Z'
+                    updatedAt: '2020-09-16T14:30:00.000Z'                                            
 
   /notes:
     get:
