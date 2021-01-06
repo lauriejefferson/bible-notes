@@ -41,7 +41,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/NotFound'
     post: 
-      summary: 'Post a new note to the database'  
+      summary: 'Post a new note to the database' 
       tags:
         - notes  
       responses:
@@ -58,7 +58,24 @@ paths:
                     title: 'King James Bible Study Session'
                     description: 'Review of 1 Chronicles 7 - 8' 
                     createdAt: '2020-09-16T14:00:00.000Z'
-                    updatedAt: ''                         
+                    updatedAt: '' 
+      operationId: addNote     
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                note:
+                  $ref: '#/components/schemas/note'
+              required:
+                - note
+              examples:
+                example-1:   
+                  items:
+                    - noteId: 1115
+                    - title:                  
+
   /notes:
     get:
       summary: 'Get a list of notes from the database' 
