@@ -85,7 +85,7 @@ paths:
                   createdAt: '2020-09-16T14:00:00.000Z'
                   updatedAt: '2020-09-16T14:30:00.000Z'
       responses:
-        "200"
+        "200":
           description: OK - note updated.
     delete:
 
