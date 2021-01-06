@@ -72,7 +72,7 @@ paths:
                 - note
             examples:
               example-1:   
-                items:
+                value:
                   - noteId: 1115
                     title: 'King James Bible Study Session'
                     description: 'Review of 1 Chronicles 7 - 8' 
