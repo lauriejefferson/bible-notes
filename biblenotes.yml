@@ -70,14 +70,14 @@ paths:
                   $ref: '#/components/schemas/note'
               required:
                 - note
-              examples:
-                example-1:   
-                  items:
-                    - noteId: 1115
-                      title: 'King James Bible Study Session'
-                      description: 'Review of 1 Chronicles 7 - 8' 
-                      createdAt: '2020-09-16T14:00:00.000Z'
-                      updatedAt: ''                  
+            examples:
+              example-1:   
+                items:
+                  - noteId: 1115
+                    title: 'King James Bible Study Session'
+                    description: 'Review of 1 Chronicles 7 - 8' 
+                    createdAt: '2020-09-16T14:00:00.000Z'
+                    updatedAt: ''                  
 
   /notes:
     get:
