@@ -88,9 +88,23 @@ paths:
         "200":
           description: OK - note updated.
     delete:
-
-
-
+      tags:
+        - note
+      summary: Delete a note from the database
+      operationId: deleteNote
+      parameters:
+          - name: noteId
+            in: path
+            required: true
+            schema:
+              type: string
+      responses:
+        "200":
+          description: OK - note deleted.
+          content:       
+            application/json:
+              schema:   
+                $ref: '#/components/schemas/note'
   /notes:
     get:
       summary: 'Get a list of notes from the database' 
