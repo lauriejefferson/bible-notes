@@ -50,7 +50,15 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Note'                    
+                $ref: '#/components/schemas/Note'
+              examples:
+                example-1:
+                  value:
+                    noteId: 1115
+                    title: 'King James Bible Study Session'
+                    description: 'Review of 1 Chronicles 7 - 8' 
+                    createdAt: '2020-09-16T14:00:00.000Z'
+                    updatedAt: ''                         
   /notes:
     get:
       summary: 'Get a list of notes from the database' 
