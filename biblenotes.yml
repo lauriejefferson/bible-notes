@@ -79,11 +79,17 @@ paths:
                   $ref: '#/components/schemas/note'
             example:
               value:
-                 - noteId: 1115
-                    title: 'King James Bible Study Session'
-                    description: 'Review of 1 Chronicles 7 - 8 and 1 Kings 10 - 11' 
-                    createdAt: '2020-09-16T14:00:00.000Z'
-                    updatedAt: '2020-09-16T14:30:00.000Z'                                            
+                - noteId: 1115
+                  title: 'King James Bible Study Session'
+                  description: 'Review of 1 Chronicles 7 - 8 and 1 Kings 10 - 11' 
+                  createdAt: '2020-09-16T14:00:00.000Z'
+                  updatedAt: '2020-09-16T14:30:00.000Z'
+      responses:
+        "200"
+          description: OK - note updated.
+    delete:
+
+
 
   /notes:
     get:
