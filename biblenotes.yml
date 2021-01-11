@@ -58,7 +58,7 @@ paths:
                 value:
                   - noteId: 1115
                     title: 'King James Bible Study Session'
-                    description: 'Review of 1 Chronicles 7 - 8' 
+                    text: 'Review of 1 Chronicles 7 - 8' 
                     createdAt: '2020-09-16T14:00:00.000Z'
                     updatedAt: '' 
       responses:
@@ -81,7 +81,7 @@ paths:
               value:
                 - noteId: 1115
                   title: 'King James Bible Study Session'
-                  description: 'Review of 1 Chronicles 7 - 8 and 1 Kings 10 - 11' 
+                  text: 'Review of 1 Chronicles 7 - 8 and 1 Kings 10 - 11' 
                   createdAt: '2020-09-16T14:00:00.000Z'
                   updatedAt: '2020-09-16T14:30:00.000Z'
       responses:
@@ -125,52 +125,52 @@ paths:
                  value:
                    - noteId: 1001
                      title: Bible Study Notes
-                     description: 'Read Psalm 34,35,36 Prov 3-7'
+                     text: 'Read Psalm 34,35,36 Prov 3-7'
                      createdAt: '2020-03-05T14:07:01.688Z'
                      updatedAt: ''
                    - noteId: 1002
                      title: Bible Study Notes
-                     description: 'Read 1 Chron 2:16-20, Prov 9'
+                     text: 'Read 1 Chron 2:16-20, Prov 9'
                      createdAt: '2020-03-05T14:10:01.688Z'
                      updatedAt: '2020-03-05T14:20:00.000Z'
                    - noteId: 1003
                      title: Bible Study Notes
-                     description: 'Verses about salvation - Exodus 15:2, 1 Chron 16:23'
+                     text: 'Verses about salvation - Exodus 15:2, 1 Chron 16:23'
                      createdAt: '2020-03-05T15:05:01.00'
                      updatedAt: '2020-03-10T10:00:00.000Z'
                    - noteId: 1004
                      title: Bible Study Notes
-                     description: Read Psalm 118,119
+                     text: Read Psalm 118,119
                      createdAt: '2020-04-19T11:45:01.000Z'
                      updatedAt: ''
                    - noteId: 1005
                      title: Bible Study Notes
-                     description: Read 1 Kings 2 - 4
+                     text: Read 1 Kings 2 - 4
                      createdAt: '2020-05-30T09:10:00.00Z'
                      updatedAt: '2020-06-14T09:30:00.00Z'
                    - noteId: 1006
                      title: Bible Study Notes
-                     description: Read John 1 - 3
+                     text: Read John 1 - 3
                      createdAt: '2020-06-25T16:40:02.000Z'
                      updatedAt: ''
                    - noteId: 1007
                      title: Bible Study Notes
-                     description: Read Ezra
+                     text: Read Ezra
                      createdAt: '2020-10-02T08:15:00.000Z'
                      updatedAt: '2020-10-03T11:30:00.00Z'
                    - noteId: 1008
                      title: Bible Study Notes
-                     description: Read Psalm 18:2, Psalm 27:2
+                     text: Read Psalm 18:2, Psalm 27:2
                      createdAt: '2020-11-08T14:50:01.688Z'
                      updatedAt: ''
                    - noteId: 1009
                      title: Bible Study Notes
-                     description: Read Isaiah 54 before women's group meeting
+                     text: Read Isaiah 54 before women's group meeting
                      createdAt: '2020-12-18T17:30:01.000Z'
                      updatedAt: ''
                    - noteId: 1010
                      title: Bible Study Notes
-                     description: End of year bible study - Psalm 95:1, John 1:1-5
+                     text: End of year bible study - Psalm 95:1, John 1:1-5
                      createdAt: '2020-03-05T14:07:01.688Z'
                      updatedAt: ''
 components:
