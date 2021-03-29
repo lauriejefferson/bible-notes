@@ -52,7 +52,7 @@ paths:
               type: object
               properties:
                 note:
-                  $ref: '#/components/schemas/note'
+                  $ref: '#/components/schemas/Note'
             examples:
               example-1:   
                 value:
@@ -76,7 +76,7 @@ paths:
               type: object
               properties:
                 note:
-                  $ref: '#/components/schemas/note'
+                  $ref: '#/components/schemas/Note'
             example:
               value:
                 - noteId: 1115
