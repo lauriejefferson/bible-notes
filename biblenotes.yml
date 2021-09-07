@@ -44,7 +44,7 @@ paths:
       summary: 'Post a new note to the database' 
       tags:
         - notes    
-      operationId: addNote     
+      operationId: addNote   
       requestBody:
         content:
           application/json:
@@ -52,7 +52,7 @@ paths:
               type: object
               properties:
                 note:
-                  $ref: '#/components/schemas/Note'
+                  $ref: '#/components/schemas/note'
             examples:
               example-1:   
                 value:
@@ -76,7 +76,7 @@ paths:
               type: object
               properties:
                 note:
-                  $ref: '#/components/schemas/Note'
+                  $ref: '#/components/schemas/note'
             example:
               value:
                 - noteId: 1115
